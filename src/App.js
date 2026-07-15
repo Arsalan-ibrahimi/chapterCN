@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import NavigationBar from './views/navigationBar'
+import Hero from './views/hero'
+import Footer from './views/footer'
+import StoryList from './views/storylist'
+import StoryPage from './views/storypage'
+import Animate from './views/doodleanimate'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar/>
+      <Hero/>
+    <StoryList/>
+    <Animate/>
+   
+      {/* <Footer/> */}
+
     </div>
   );
 }
